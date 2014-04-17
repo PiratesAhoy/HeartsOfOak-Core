@@ -354,8 +354,15 @@ void CCannon::OnAction(EntityId actorId, const ActionId& actionId, int activatio
 
 	bool handled = CannonActionHandler.Dispatch(this, actorId, actionId, activationMode, value, filtered);
 	if(!handled || !filtered)
-	{
-		BaseClass::OnAction(actorId, actionId, activationMode, value);
+	{	
+		if (actionId == "attack1" && (Recoiling || Recovering))
+		{	
+			//do nothing because the cannon is recoiling or recovering right now
+		}
+		else
+		{
+			BaseClass::OnAction(actorId, actionId, activationMode, value);
+		}
 	}
 }
 

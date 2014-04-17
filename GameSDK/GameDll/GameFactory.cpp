@@ -43,6 +43,7 @@ History:
 #include "LTAG.h"
 #include "HeavyMountedWeapon.h"
 #include "Cannon.h" //HoO
+#include "Ship.h" //HoO
 #include "HeavyWeapon.h"
 #include "PickAndThrowWeapon.h"
 #include "NoWeapon.h"
@@ -268,6 +269,9 @@ void InitGameFactory(IGameFramework *pFramework)
 	REGISTER_FACTORY(pFramework, "WeaponMelee", CWeaponMelee, false);
 	REGISTER_FACTORY(pFramework, "UseableTurret", CUseableTurret, false);
 	REGISTER_FACTORY(pFramework, "CinematicWeapon", CCinematicWeapon, false);
+
+	//HoO
+	REGISTER_GAME_OBJECT(pFramework, Ship, "Scripts/Entities/Vessels/Ship.lua");
 	
 #if SERVER_CHEAT_MONITOR_ENABLED
 	REGISTER_GAME_OBJECT_EXTENSION(pFramework, ServerPlayerTracker);
