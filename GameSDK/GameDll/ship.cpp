@@ -29,43 +29,44 @@ void CShip::SetAuthority(bool auth)
 
 bool CShip::Reset()
 {
-	IScriptTable*  pTable = GetEntity()->GetScriptTable();
-	if (pTable != NULL)
-	{
-		SmartScriptTable propertiesTable;
-		if (pTable->GetValue("Properties", propertiesTable))
-		{
-			//propertiesTable->GetValue("bCurrentlyDealingDamage", m_dangerous);
-			//propertiesTable->GetValue("bDoesFriendlyFireDamage", m_friendlyFireEnabled);
-			//propertiesTable->GetValue("fDamageToDeal", m_damageDealt);
-			//propertiesTable->GetValue("fTimeBetweenHits", m_timeBetweenHits);
-		}
-	}
-	CryLogAlways("Reset");
+	//IScriptTable*  pTable = GetEntity()->GetScriptTable();
+	//if (pTable != NULL)
+	//{
+	//	SmartScriptTable propertiesTable;
+	//	if (pTable->GetValue("Properties", propertiesTable))
+	//	{
+	//		//propertiesTable->GetValue("bCurrentlyDealingDamage", m_dangerous);
+	//		//propertiesTable->GetValue("bDoesFriendlyFireDamage", m_friendlyFireEnabled);
+	//		//propertiesTable->GetValue("fDamageToDeal", m_damageDealt);
+	//		//propertiesTable->GetValue("fTimeBetweenHits", m_timeBetweenHits);
+	//	}
+	//}
+	//CryLogAlways("Reset");
 	return true;
 }
 
 void CShip::ProcessEvent(SEntityEvent &event)
 {
 	
-	switch(event.event)
-	{
-	case ENTITY_EVENT_COLLISION:
-		{
-			CryLogAlways("OnCollision");
-			break;
-		}
-	case ENTITY_EVENT_ONHIT:
-		{
-			CryLogAlways("OnHit");	
-		}
-		break;
-	case ENTITY_EVENT_RESET:
-		{
-		    Reset();
-		}
-		break;
-	}
+	//switch(event.event)
+	//{
+	//case ENTITY_EVENT_COLLISION:
+	//	{
+	//		CryLogAlways("OnCollision");
+	//		
+	//	}
+	//	break;
+	//case ENTITY_EVENT_ONHIT:
+	//	{
+	//		CryLogAlways("OnHit");	
+	//	}
+	//	break;
+	//case ENTITY_EVENT_RESET:
+	//	{
+	//	    Reset();
+	//	}
+	//	break;
+	//}
 
 }
 

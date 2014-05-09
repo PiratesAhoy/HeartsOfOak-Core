@@ -296,7 +296,9 @@ struct SPierceabilityParams
 
 	ILINE bool DestroyOnWaterImpact() const
 	{
-		return (gEnv->bMultiplayer == false);
+		//HoO
+		return false;
+		//return (gEnv->bMultiplayer == false);
 	}
 
 	float GetDamageFallOffForPierceability(uint32 pierceability) const
