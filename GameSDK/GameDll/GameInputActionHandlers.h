@@ -25,7 +25,7 @@ History:
 #include <IActionMapManager.h>
 #include "Weapon.h"
 #include "HeavyMountedWeapon.h"
-#include "Cannon.h"
+#include "Cannon.h" //HoO
 #include "JAW.h"
 #include "LTAG.h"
 #include "Binocular.h"

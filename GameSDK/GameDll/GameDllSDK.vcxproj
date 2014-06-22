@@ -599,6 +599,7 @@
     <ClCompile Include="AntiCheat\ServerPlayerTracker.cpp" />
     <ClCompile Include="BodyDefinitions.cpp" />
     <ClCompile Include="Cannon.cpp" />
+    <ClCompile Include="CannonBall.cpp" />
     <ClCompile Include="CinematicWeapon.cpp" />
     <ClCompile Include="CornerSmoother.cpp" />
     <ClCompile Include="DataPatchDownloader.cpp" />
@@ -1235,6 +1236,7 @@
     <ClInclude Include="AntiCheat\ShotCounter.h" />
     <ClInclude Include="BasicEventListener.h" />
     <ClInclude Include="cannon.h" />
+    <ClInclude Include="CannonBall.h" />
     <ClInclude Include="CinematicWeapon.h" />
     <ClInclude Include="CornerSmoother.h" />
     <ClInclude Include="DataPatchDownloader.h" />

@@ -24,6 +24,7 @@ History:
 #include "WeaponSharedParams.h"
 #include "ProjectileAutoAimHelper.h"
 #include "Projectile.h"
+#include "CannonBall.h"
 #include "Bullet.h"
 #include "Rocket.h"
 #include "HomingMissile.h"
@@ -176,6 +177,7 @@ CWeaponSystem::CWeaponSystem(CGame *pGame, ISystem *pSystem)
 
 	// register projectile classes here
 	REGISTER_PROJECTILE(Projectile, CProjectile);
+	REGISTER_PROJECTILE(CannonBall, CCannonBall);
 	REGISTER_PROJECTILE(Bullet, CBullet);
 	REGISTER_PROJECTILE(KVoltBullet, CKVoltBullet);
 	REGISTER_PROJECTILE(Rocket, CRocket);
